@@ -6,16 +6,13 @@
 # Build folders
 bin/
 obj/
-
 # Visual Studio settings
 .vs/
 *.user
 *.suo
-
 # OS files
 Thumbs.db
 .DS_Store
-
 # Logs
 *.log
 =======
