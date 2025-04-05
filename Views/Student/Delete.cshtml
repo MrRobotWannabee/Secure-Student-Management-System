@@ -1,0 +1,59 @@
+﻿@model Secure_Student_Management_System.Models.Student
+@{
+    // Fix CS1963: Explicitly cast EnrolmentStatus to string before applying ToLower()
+    var statusClass = ((string)Model.EnrolmentStatus.ToString()).ToLower();
+}
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Deletion</title>
+    <link rel="stylesheet" href="/css/student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card danger-zone shake">
+            <h1 class="text-center danger-text">Confirm Deletion</h1>
+            <div class="confirmation-content">
+                <!-- Student Preview -->
+                <div class="student-preview">
+                    @if (!string.IsNullOrEmpty(Model.ProfileImageUrl))
+                    {
+                        <img src="@Model.ProfileImageUrl" alt="Profile" class="avatar-large">
+                    }
+                    <div class="student-info">
+                        <h2>@Model.FirstName @Model.LastName</h2>
+                        <p>@Model.Email</p>
+                        <p class="status-badge @statusClass">
+                            @Model.EnrolmentStatus
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Warning Message -->
+                <div class="warning-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>This action cannot be undone!</h3>
+                    <p>All associated data will be permanently removed from the system.</p>
+                    <p class="note">Please ensure you want to delete this student.</p>
+                </div>
+
+                <!-- Confirmation Form -->
+                <form asp-action="Delete" asp-controller="Student" method="post" class="confirmation-actions">
+                    @Html.AntiForgeryToken() <!-- Added CSRF Protection -->
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn danger" aria-label="Confirm Deletion">
+                        <i class="fas fa-trash"></i> Confirm Permanent Delete
+                    </button>
+                    <a asp-controller="Student" asp-action="Index" class="btn secondary">
+                        <i class="fas fa-times-circle"></i> Cancel
+                    </a>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿@model AddPhoneNumberViewModel
+@{
+    ViewData["Title"] = "Add Phone Number";
+    Layout = "_ManageLayout";
+}
+
+<div class="manage-card">
+    <div class="manage-card-header">
+        <h1 class="h3 mb-0"><i class="bi bi-phone me-2"></i>Add Phone Number</h1>
+    </div>
+
+    <form asp-action="AddPhoneNumber" method="post" class="needs-validation" novalidate>
+        <div class="mb-4">
+            <label asp-for="Number" class="form-label">Phone Number</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="bi bi-telephone-plus"></i></span>
+                <input asp-for="Number"
+                       class="form-control"
+                       type="tel"
+                       required
+                       placeholder="+1 555 123 4567"
+                       pattern="^\+[1-9]\d{1,14}$">
+                <div class="invalid-feedback">
+                    Valid international number required (E.164 format)
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">
+            <i class="bi bi-send-check me-2"></i>Send Verification Code
+        </button>
+    </form>
+</div>
+
+@section Scripts {
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+        const phoneInput = document.querySelector('input[type="tel"]');
+        const phonePattern = /^\+[1-9]\d{1,14}$/;
+
+        phoneInput.addEventListener('input', () => {
+            const isValid = phonePattern.test(phoneInput.value);
+            phoneInput.classList.toggle('is-invalid', !isValid);
+            phoneInput.classList.toggle('is-valid', isValid);
+        });
+    </script>
+}

@@ -1,0 +1,53 @@
+﻿@model ManageLoginsViewModel
+@{
+    ViewData["Title"] = "Manage External Logins";
+    Layout = "_ManageLayout";
+}
+
+<div class="manage-card">
+    <div class="manage-card-header">
+        <h1 class="h3 mb-0"><i class="bi bi-plug me-2"></i>External Logins</h1>
+    </div>
+
+    <div class="mb-4">
+        <h2 class="h5 mb-3">Current Logins</h2>
+        <div class="d-flex flex-column gap-2">
+            @foreach (var login in Model.CurrentLogins)
+            {
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="security-badge">
+                        <i class="bi bi-@login.LoginProvider.ToLower()"></i>
+                        @login.ProviderDisplayName
+                    </span>
+                    @if (Model.ShowRemoveButton)
+                    {
+                        <form asp-action="RemoveLogin" method="post">
+                            <input type="hidden" name="loginProvider" value="@login.LoginProvider" />
+                            <input type="hidden" name="providerKey" value="@login.ProviderKey" />
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i> Remove
+                            </button>
+                        </form>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="pt-3 border-top">
+        <h2 class="h5 mb-3">Add Another Service</h2>
+        <div class="d-flex flex-wrap gap-2">
+            @foreach (var provider in Model.OtherLogins)
+            {
+                <form asp-action="LinkLogin" method="post">
+                    <button type="submit"
+                            class="btn btn-outline-dark"
+                            title="Connect using @provider.DisplayName">
+                        <i class="bi bi-@provider.DisplayName.ToLower()"></i>
+                        @provider.DisplayName
+                    </button>
+                </form>
+            }
+        </div>
+    </div>
+</div>

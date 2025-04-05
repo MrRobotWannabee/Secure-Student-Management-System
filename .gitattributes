@@ -1,0 +1,22 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+<<<<<<< HEAD
+# Auto detect text files and perform LF normalization
+* text=auto
+# Build folders
+bin/
+obj/
+
+# Visual Studio settings
+.vs/
+*.user
+*.suo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+=======
+>>>>>>> e1f30fd35a0b280d734f07c027508c8d6a5e0a2d

@@ -1,0 +1,97 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Secure_Student_Management_System.Utilities
+@inject SignInManager<ApplicationUser> SignInManager
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Account Management</title>
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa' https://cdn.jsdelivr.net;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- Styles -->
+    <link nonce="EDNnf03nceIOfn39fn3e9h3sdfa"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="~/css/manage.css" asp-append-version="true">
+</head>
+
+<body class="manage-container">
+    <aside class="manage-sidebar">
+        <!-- User Profile -->
+        <div class="user-profile">
+            @{
+                var user = await SignInManager.UserManager.GetUserAsync(User);
+                var initials = user?.FirstName?[0].ToString() + user?.LastName?[0].ToString();
+            }
+            <div class="avatar-circle bg-primary text-white">
+                @initials
+            </div>
+            <div class="user-info">
+                <h2 class="user-Fname">@user?.FirstName</h2>
+                <h2 class="user-Lname">@user?.LastName</h2>
+                <p class="user-email">@user?.Email</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="manage-nav">
+            <a class="manage-nav-link @ManageNavPages.IndexClass(ViewContext)" asp-action="Index">
+                <i class="bi bi-person-gear"></i> Profile
+            </a>
+            <a class="manage-nav-link @ManageNavPages.SecurityClass(ViewContext)" asp-action="ChangePassword">
+                <i class="bi bi-shield-lock"></i> Security
+            </a>
+            <a class="manage-nav-link @ManageNavPages.ConnectionsClass(ViewContext)" asp-action="ManageLogins">
+                <i class="bi bi-plug"></i> Connections
+            </a>
+        </nav>
+    </aside>
+
+    <main class="manage-main">
+        <!-- Status Messages -->
+        @if (TempData["StatusMessage"] != null || TempData["ErrorMessage"] != null)
+        {
+            <div class="status-alerts">
+                @if (TempData["StatusMessage"] != null)
+                {
+                    <div class="alert alert-success">
+                        @TempData["StatusMessage"]
+                    </div>
+                }
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger">
+                        @TempData["ErrorMessage"]
+                    </div>
+                }
+            </div>
+        }
+
+        @RenderBody()
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav d-lg-none">
+        <a class="nav-link @ManageNavPages.IndexClass(ViewContext)" asp-action="Index">
+            <i class="bi bi-person"></i>
+        </a>
+        <a class="nav-link @ManageNavPages.SecurityClass(ViewContext)" asp-action="ChangePassword">
+            <i class="bi bi-shield"></i>
+        </a>
+        <a class="nav-link @ManageNavPages.ConnectionsClass(ViewContext)" asp-action="ManageLogins">
+            <i class="bi bi-plug"></i>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

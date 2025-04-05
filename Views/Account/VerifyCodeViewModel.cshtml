@@ -1,0 +1,55 @@
+﻿<!-- Views/Account/VerifyCode.cshtml -->
+@model VerifyCodeViewModel
+@{
+    ViewData["Title"] = "Verify Authentication Code";
+    Layout = "_AuthLayout";
+}
+
+<div class="auth-card mx-auto">
+    <div class="card shadow-lg">
+        <div class="card-body p-5">
+            <h2 class="h3 mb-4 fw-bold text-center">
+                <i class="bi bi-shield-lock text-primary"></i> Verify Code
+            </h2>
+
+            <form asp-action="VerifyCode" method="post" class="needs-validation" novalidate>
+                <input asp-for="Provider" type="hidden" />
+                <input asp-for="RememberMe" type="hidden" />
+                <input asp-for="ReturnUrl" type="hidden" />
+
+                <div class="mb-4">
+                    <label asp-for="Code" class="form-label">Verification Code</label>
+                    <input asp-for="Code" class="form-control"
+                           required
+                           data-val="true"
+                           autocomplete="one-time-code"
+                           inputmode="numeric"
+                           pattern="\d{6}">
+                    <div class="invalid-feedback">6-digit code required</div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input asp-for="RememberBrowser" class="form-check-input">
+                    <label asp-for="RememberBrowser" class="form-check-label">
+                        Remember this browser
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2">
+                    <i class="bi bi-check2-circle"></i> Verify
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+        // Auto-submit when code is complete
+        document.querySelector('input[inputmode="numeric"]').addEventListener('input', function(e) {
+            if (e.target.value.length === 6) {
+                e.target.form.submit();
+            }
+        });
+    </script>
+}

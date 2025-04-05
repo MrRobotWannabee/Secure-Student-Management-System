@@ -1,0 +1,121 @@
+﻿<!-- Views/Account/ManageRoles.cshtml -->
+@model IEnumerable<ApplicationUser>
+@{
+    ViewData["Title"] = "Role Management";
+    Layout = "_Layout"; // Different layout for admin area
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h2">
+            <i class="bi bi-people-fill text-primary me-2"></i>User Role Management
+        </h1>
+        <div class="spinner-border text-primary d-none" role="status" id="loadingSpinner">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped" id="usersTable">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>User</th>
+                            <th>Email</th>
+                            <th>Current Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr data-user-id="@user.Id">
+                                <td>@user.FirstName</td>
+                                <td>@user.LastName</td>
+                                <td>@user.Email</td>
+                                <td>
+                                    <span class="badge bg-primary">@user.Role</span>
+                                </td>
+                                <td>
+                                    <select class="form-select role-select"
+                                            data-user-id="@user.Id"
+                                            aria-label="Select role">
+                                        @foreach (var role in new[] { "Admin", "Teacher", "Student", "User" })
+                                        {
+                                            <option value="@role" selected="@(user.Role == role)">@role</option>
+                                        }
+                                    </select>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+        document.addEventListener('DOMContentLoaded', () => {
+            const roleSelects = document.querySelectorAll('.role-select');
+
+            roleSelects.forEach(select => {
+                select.addEventListener('change', async (e) => {
+                    const userId = e.target.dataset.userId;
+                    const newRole = e.target.value;
+
+                    try {
+                        document.getElementById('loadingSpinner').classList.remove('d-none');
+
+                        const response = await fetch(`/Account/UpdateRole?userId=${userId}&newRole=${newRole}`, {
+                            method: 'POST',
+                            headers: {
+                                'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value,
+                                'Content-Type': 'application/json'
+                            }
+                        });
+
+                        if (!response.ok) throw new Error('Update failed');
+
+                        const badge = document.querySelector(`tr[data-user-id="${userId}"] .badge`);
+                        badge.textContent = newRole;
+                        badge.className = `badge bg-${getRoleColor(newRole)}`;
+
+                        showToast('Role updated successfully', 'success');
+                    } catch (error) {
+                        showToast('Error updating role', 'danger');
+                        e.target.value = e.target.dataset.originalValue;
+                    } finally {
+                        document.getElementById('loadingSpinner').classList.add('d-none');
+                    }
+                });
+            });
+
+            function getRoleColor(role) {
+                const colors = {
+                    'Admin': 'danger',
+                    'Teacher': 'warning',
+                    'Student': 'success',
+                    'User': 'primary'
+                };
+                return colors[role] || 'secondary';
+            }
+
+            function showToast(message, type) {
+                const toast = document.createElement('div');
+                toast.className = `toast align-items-center text-white bg-${type} border-0`;
+                toast.innerHTML = `
+                            <div class="d-flex">
+                                <div class="toast-body">${message}</div>
+                                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                            </div>`;
+
+                document.body.appendChild(toast);
+                new bootstrap.Toast(toast).show();
+                setTimeout(() => toast.remove(), 5000);
+            }
+        });
+    </script>
+}

@@ -1,0 +1,33 @@
+﻿<!-- Views/Account/SendCode.cshtml -->
+@model SendCodeViewModel
+@{
+    ViewData["Title"] = "Two-Factor Authentication";
+    Layout = "_AuthLayout";
+}
+
+<div class="auth-card mx-auto">
+    <div class="card shadow-lg">
+        <div class="card-body p-5">
+            <h2 class="h3 mb-4 fw-bold text-center">
+                <i class="bi bi-shield-check text-info"></i> 2FA Verification
+            </h2>
+
+            <form asp-action="SendCode" method="post" class="needs-validation" novalidate>
+                <input asp-for="RememberMe" type="hidden" />
+
+                <div class="mb-4">
+                    <label class="form-label">Select 2FA Provider:</label>
+                    <select asp-for="SelectedProvider" asp-items="Model.Providers"
+                            class="form-select" required>
+                        <option value="">Select Provider</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a provider</div>
+                </div>
+
+                <button type="submit" class="btn btn-info w-100 py-2">
+                    <i class="bi bi-send-check"></i> Send Code
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

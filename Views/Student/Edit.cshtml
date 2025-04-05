@@ -1,0 +1,100 @@
+﻿@model Secure_Student_Management_System.Models.Student
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="/css/student.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card slide-up">
+            <h1 class="text-center">Edit Student Profile</h1>
+            <form asp-action="Edit" method="post" enctype="multipart/form-data" class="grid-form">
+                @Html.AntiForgeryToken() <!-- Added CSRF Protection -->
+                <input type="hidden" asp-for="Id" />
+
+                <!-- First Name -->
+                <div class="form-group">
+                    <label for="FirstName" aria-label="First Name">First Name</label>
+                    <input type="text" id="FirstName" asp-for="FirstName" required
+                           pattern="[A-Za-z ]{2,50}" class="input-field" aria-describedby="FirstNameHelp">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-group">
+                    <label for="LastName" aria-label="Last Name">Last Name</label>
+                    <input type="text" id="LastName" asp-for="LastName" required
+                           pattern="[A-Za-z ]{2,50}" class="input-field" aria-describedby="LastNameHelp">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="Email" aria-label="Email Address">Email</label>
+                    <input type="email" id="Email" asp-for="Email" required class="input-field" aria-describedby="EmailHelp">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <!-- Mobile Number -->
+                <div class="form-group">
+                    <label for="MobileNumber" aria-label="Mobile Number">Mobile Number</label>
+                    <input type="tel" id="MobileNumber" asp-for="MobileNumber" required
+                           pattern="[0-9]{10,15}" class="input-field" aria-describedby="MobileNumberHelp">
+                    <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                </div>
+
+                <!-- Enrollment Status -->
+                <div class="form-group">
+                    <label for="EnrolmentStatus" aria-label="Enrollment Status">Enrollment Status</label>
+                    <select id="EnrolmentStatus" asp-for="EnrolmentStatus" class="input-field" aria-label="Enrollment Status">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                        <option value="Graduated">Graduated</option>
+                        <option value="Dropped">Dropped</option>
+                    </select>
+                    <span asp-validation-for="EnrolmentStatus" class="text-danger"></span>
+                </div>
+
+                <!-- Profile Image Upload -->
+                <div class="form-group full-width">
+                    <label class="file-upload">
+                        <input type="file" id="profileImage" name="profileImage" accept="image/*" aria-label="Profile Image">
+                        <span class="upload-label">Change Profile Image</span>
+                        <div class="image-preview" id="imagePreview">
+                            @if (!string.IsNullOrEmpty(Model.ProfileImageUrl))
+                            {
+                                <img src="@Model.ProfileImageUrl" alt="Current Profile" class="preview-image">
+                            }
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Submit and Cancel Buttons -->
+                <div class="action-group full-width">
+                    <button type="submit" class="btn primary" aria-label="Save Changes">Save Changes</button>
+                    <a href="/Student/Index" class="btn secondary" aria-label="Cancel Edit">
+                        <i class="fas fa-times-circle"></i> Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('profileImage').addEventListener('change', function (e) {
+            const preview = document.getElementById('imagePreview');
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Preview" class="preview-image">`;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+﻿<!-- Views/Account/Login.cshtml -->
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Secure Login";
+    Layout = "_AuthLayout";
+}
+
+<div class="auth-card mx-auto">
+    <div class="card shadow-lg">
+        <div class="card-body p-5">
+            <h1 class="h2 mb-4 fw-bold text-center">
+                <i class="bi bi-shield-lock-fill text-primary"></i> Secure Access
+            </h1>
+
+            <form asp-action="Login" method="post" id="loginForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control"
+                           required
+                           data-val="true"
+                           data-val-required="The Email field is required."
+                           autocomplete="username"
+                           aria-describedby="emailHelp">
+                    <div class="invalid-feedback">Please provide a valid email.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <input asp-for="Password" type="password"
+                               class="form-control password-toggle"
+                               required
+                               data-val="true"
+                               data-val-required="The Password field is required."
+                               autocomplete="current-password">
+                        <button type="button" class="btn btn-outline-secondary toggle-password">
+                            <i class="bi bi-eye-slash"></i>
+                        </button>
+                    </div>
+                    <div class="invalid-feedback">Please provide your password.</div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input asp-for="RememberMe" class="form-check-input">
+                    <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 mb-3">
+                    <i class="bi bi-box-arrow-in-right"></i> Sign In
+                </button>
+
+                <div class="text-center mb-4">
+                    <a href="#" class="text-decoration-none">Forgot password?</a>
+                </div>
+
+                <div class="separator">or continue with</div>
+
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-google"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Sign in with Google"
+                            onclick="location.href='@Url.Action("SignInGoogle", "Account")'">
+                        <i class="bi bi-google"></i> Google
+                    </button>
+
+                    <button type="button" class="btn btn-oidc"
+                            onclick="location.href='@Url.Action("SignInOIDC", "Account")'">
+                        <i class="bi bi-microsoft"></i> Organization Account
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+        // Client-side validation and password toggle
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+
+            document.querySelectorAll('.toggle-password').forEach(button => {
+                button.addEventListener('click', () => {
+                    const input = button.previousElementSibling
+                    const icon = button.querySelector('i')
+                    const type = input.type === 'password' ? 'text' : 'password'
+                    input.type = type
+                    icon.classList.toggle('bi-eye')
+                    icon.classList.toggle('bi-eye-slash')
+                })
+            })
+        })()
+    </script>
+}

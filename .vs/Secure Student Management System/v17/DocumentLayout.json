@@ -1,0 +1,662 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\loginviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\loginviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Data\\Migrations\\20250405130356_MigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20250405130356_MigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\manage\\manageloginsviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\manage\\manageloginsviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\wwwroot\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:wwwroot\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\wwwroot\\css\\manage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:wwwroot\\css\\manage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\manage\\setpasswordviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\manage\\setpasswordviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\manage\\addphonenumberviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\manage\\addphonenumberviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\utilities\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:utilities\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\shared\\_managelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\shared\\_managelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\secure student management system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:secure student management system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\manage\\verifyphonenumberviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\manage\\verifyphonenumberviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\manage\\changepasswordviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\manage\\changepasswordviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\externalloginconfirmationviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\externalloginconfirmationviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\forgotpasswordviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\forgotpasswordviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\forgotpasswordconfirmation.cshtml.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\forgotpasswordconfirmation.cshtml.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\wwwroot\\css\\account.css||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:wwwroot\\css\\account.css||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\registerviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\registerviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\verifycodeviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\verifycodeviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\sendcodeviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\sendcodeviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|c:\\users\\samke\\onedrive\\desktop\\secure student management system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B203596-36FC-4AEA-B5B1-AEAB6E522B9F}|Secure Student Management System.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "manage.css",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\manage.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\manage.css",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\manage.css",
+              "RelativeToolTip": "wwwroot\\css\\manage.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-02T15:32:51.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\Index.cshtml",
+              "RelativeToolTip": "Views\\Manage\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T15:48:45.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginViewmodel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\LoginViewmodel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\LoginViewmodel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\LoginViewmodel.cshtml",
+              "RelativeToolTip": "Views\\Account\\LoginViewmodel.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:56:14.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAJYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T14:26:53.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "Controllers\\ManageController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAPcAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T16:26:58.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250405130356_MigrationName.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Data\\Migrations\\20250405130356_MigrationName.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250405130356_MigrationName.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Data\\Migrations\\20250405130356_MigrationName.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250405130356_MigrationName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:04:00.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManageViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Models\\ManageViewModels.cs",
+              "RelativeDocumentMoniker": "Models\\ManageViewModels.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Models\\ManageViewModels.cs",
+              "RelativeToolTip": "Models\\ManageViewModels.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T16:25:45.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ManageLoginsViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\ManageLoginsViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\ManageLoginsViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\ManageLoginsViewModel.cshtml",
+              "RelativeToolTip": "Views\\Manage\\ManageLoginsViewModel.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T15:48:51.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SetPasswordViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\SetPasswordViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\SetPasswordViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\SetPasswordViewModel.cshtml",
+              "RelativeToolTip": "Views\\Manage\\SetPasswordViewModel.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvzgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T15:56:10.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:08:31.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAkwAwBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:21:55.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddPhoneNumberViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\AddPhoneNumberViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\AddPhoneNumberViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\AddPhoneNumberViewModel.cshtml",
+              "RelativeToolTip": "Views\\Manage\\AddPhoneNumberViewModel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T15:48:33.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "account.css",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\account.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\account.css",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\account.css",
+              "RelativeToolTip": "wwwroot\\css\\account.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-02T15:32:56.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Models\\AccountViewModels.cs",
+              "RelativeDocumentMoniker": "Models\\AccountViewModels.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Models\\AccountViewModels.cs",
+              "RelativeToolTip": "Models\\AccountViewModels.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:19:13.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ManageNavPages.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Utilities\\ManageNavPages.cs",
+              "RelativeDocumentMoniker": "Utilities\\ManageNavPages.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Utilities\\ManageNavPages.cs",
+              "RelativeToolTip": "Utilities\\ManageNavPages.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T16:11:38.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Secure Student Management System.csproj",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Secure Student Management System.csproj",
+              "RelativeDocumentMoniker": "Secure Student Management System.csproj",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Secure Student Management System.csproj",
+              "RelativeToolTip": "Secure Student Management System.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-04T16:10:45.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ManageLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_ManageLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ManageLayout.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_ManageLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ManageLayout.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAuwCQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T16:01:44.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AuthLayout.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AuthLayout.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvyoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T15:00:26.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VerifyPhoneNumberViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\VerifyPhoneNumberViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\VerifyPhoneNumberViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\VerifyPhoneNumberViewModel.cshtml",
+              "RelativeToolTip": "Views\\Manage\\VerifyPhoneNumberViewModel.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvzkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T15:56:16.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ChangePasswordViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\ChangePasswordViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\ChangePasswordViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Manage\\ChangePasswordViewModel.cshtml",
+              "RelativeToolTip": "Views\\Manage\\ChangePasswordViewModel.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T15:46:56.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ForgotPasswordViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ForgotPasswordViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ForgotPasswordViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ForgotPasswordViewModel.cshtml",
+              "RelativeToolTip": "Views\\Account\\ForgotPasswordViewModel.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAIwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:58:18.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ExternalLoginConfirmationViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ExternalLoginConfirmationViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ExternalLoginConfirmationViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ExternalLoginConfirmationViewModel.cshtml",
+              "RelativeToolTip": "Views\\Account\\ExternalLoginConfirmationViewModel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:58:43.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ForgotPasswordConfirmation.cshtml.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ForgotPasswordConfirmation.cshtml.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ForgotPasswordConfirmation.cshtml.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ForgotPasswordConfirmation.cshtml.cshtml",
+              "RelativeToolTip": "Views\\Account\\ForgotPasswordConfirmation.cshtml.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:58:27.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-04T14:26:55.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T14:32:53.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-04T14:25:07.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "bootstrap.esm.js",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+              "ViewState": "AgIAACoCAAAAAAAAAAASwDoCAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-02T15:51:47.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:02:44.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:20:47.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "account.css",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\account.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\account.css",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\account.css",
+              "RelativeToolTip": "wwwroot\\css\\account.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-02T15:34:28.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RegisterViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\RegisterViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\RegisterViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\RegisterViewModel.cshtml",
+              "RelativeToolTip": "Views\\Account\\RegisterViewModel.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAWwBYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T15:14:31.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VerifyCodeViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\VerifyCodeViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\VerifyCodeViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\VerifyCodeViewModel.cshtml",
+              "RelativeToolTip": "Views\\Account\\VerifyCodeViewModel.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T15:16:53.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeToolTip": "Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T15:14:26.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SendCodeViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\SendCodeViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\SendCodeViewModel.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\SendCodeViewModel.cshtml",
+              "RelativeToolTip": "Views\\Account\\SendCodeViewModel.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwCAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T15:14:38.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwFgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:58:36.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ManageRoles.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ManageRoles.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ManageRoles.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Account\\ManageRoles.cshtml",
+              "RelativeToolTip": "Views\\Account\\ManageRoles.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:58:08.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAANMAAAAAAAAAAAAYwPAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-02T14:18:59.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T14:15:13.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\samke\\OneDrive\\Desktop\\Secure Student Management System\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T14:21:52.826Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

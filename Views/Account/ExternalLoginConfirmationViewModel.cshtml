@@ -1,0 +1,56 @@
+﻿<!-- Views/Account/ExternalLoginConfirmation.cshtml -->
+@model ExternalLoginConfirmationViewModel
+@{
+    ViewData["Title"] = "Complete Registration";
+    Layout = "_AuthLayout";
+}
+
+<div class="auth-card mx-auto">
+    <div class="card shadow-lg">
+        <div class="card-body p-5">
+            <h2 class="h3 mb-4 fw-bold text-center">
+                <i class="bi bi-person-plus-fill text-success"></i> Complete Profile
+            </h2>
+
+            <form asp-action="ExternalLoginConfirmation" method="post" class="needs-validation" novalidate>
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control"
+                           readonly
+                           aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">This email is provided by your external login provider.</small>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label asp-for="FirstName" class="form-label">First Name</label>
+                        <input asp-for="FirstName" class="form-control"
+                               required
+                               data-val="true"
+                               data-val-required="First name is required."
+                               autocomplete="given-name">
+                        <div class="invalid-feedback">Please provide your first name.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="LastName" class="form-label">Last Name</label>
+                        <input asp-for="LastName" class="form-control"
+                               required
+                               data-val="true"
+                               data-val-required="Last name is required."
+                               autocomplete="family-name">
+                        <div class="invalid-feedback">Please provide your last name.</div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-success w-100 py-2">
+                        <i class="bi bi-check-circle-fill"></i> Complete Registration
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

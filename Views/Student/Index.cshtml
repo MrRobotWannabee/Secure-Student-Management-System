@@ -1,0 +1,77 @@
+﻿@model List<Secure_Student_Management_System.Models.Student>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="/css/student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card slide-up">
+            <div class="header-bar">
+                <h1>Student Directory</h1>
+                <form method="get" class="search-form" role="search">
+                    <input type="search" name="searchQuery" placeholder="Search students..."
+                           value="@ViewData["SearchQuery"]" class="search-input" aria-label="Search for students">
+                    <button type="submit" class="btn icon" aria-label="Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <section class="responsive-table">
+                <div class="table-header">
+                    <div>Name</div>
+                    <div>Email</div>
+                    <div>Status</div>
+                    <div>Actions</div>
+                </div>
+
+                @foreach (var student in Model)
+                {
+                    <div class="table-row hover-scale">
+                        <div class="student-info">
+                            <img src="@student.ProfileImageUrl" alt="Profile picture of @student.FirstName @student.LastName" class="avatar">
+                            <span>@student.FirstName @student.LastName</span>
+                        </div>
+                        <div>@student.Email</div>
+                        <div>
+                            <span class="status-badge @student.EnrolmentStatus.ToString().ToLower()">
+                                @student.EnrolmentStatus
+                            </span>
+                        </div>
+                        <div class="action-group">
+                            <a href="/Student/Edit/@student.Id" class="btn icon" aria-label="Edit Student @student.FirstName @student.LastName">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <a href="/Student/SoftDelete/@student.Id" class="btn icon warning" aria-label="Soft Delete Student @student.FirstName @student.LastName">
+                                    <i class="fas fa-user-slash"></i>
+                                </a>
+                                <a href="/Student/DeleteConfirmation/@student.Id" class="btn icon danger" aria-label="Delete Student @student.FirstName @student.LastName">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                }
+            </section>
+
+            <section class="pagination">
+                @if (ViewData["TotalPages"] is int totalPages && ViewData["CurrentPage"] is int currentPage)
+                {
+                    @for (int i = 1; i <= totalPages; i++)
+                    {
+                        <a href="/Student/Index?pageNumber=@i&searchQuery=@ViewData["SearchQuery"]"
+                           class="page-item @(i == currentPage ? "active" : "")"
+                           aria-label="Page @i">@i</a>
+                    }
+                }
+            </section>
+        </div>
+    </main>
+</body>
+</html>
